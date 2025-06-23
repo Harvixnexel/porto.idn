@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="image/logo.png" type="image/png">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvix Nexel - AI Business Strategist & Educator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .profile-photo {
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .solution-card {
+            transition: all 0.3s ease;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .grid-image {
+            transition: all 0.3s ease;
+        }
+        
+        .grid-image:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-10 w-auto" src="image/logo.png" alt="Aino Logo">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <div class="ml-10 flex items-center space-x-4">
+    <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+    <a href="#skills-project" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Skills & Project</a>
+    <a href="#contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-blue-600 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#Home" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#Skills & Project" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Skills & Project</a>
+                <a href="#Contact" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-[70vh] flex items-center justify-center text-white py-16 fade-in">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="image/nx.png" alt="Aino" class="profile-photo mx-auto rounded-full h-40 w-40 object-cover mb-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Harvix Nexel</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">AI Business Strategist & Educator</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Sebagai AI Business Strategist dan Educator yang membantu menyelesaikan permasalahan nyata melalui integrasi solusi cerdas dan praktis berbasis AI</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#Skills & Project" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Yang saya kerjakan</a>
+                <a href="#Contact" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-medium py-3 px-6 border-2 border-white rounded-lg transition duration-300">Contact Me</a>
+            </div>
+        </div>
+    </section>
+ <!-- skills-project -->
+    <section id="skills-project" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Apa yang saya miliki</h2>
+                <p class="text-lg text-gray-600">
+                    Saya memiliki keterampilan yang praktis dan strategis untuk membantu bisnis <strong>mengurangi biaya operasional</strong> dan meningkatkan profit melalui pemanfaatan teknologi AI
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Solution 1 -->
+                <div class="solution-card bg-gray-50 rounded-xl p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-chess text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">AI Business Strategy</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                       Menyusun strategi yang selaras dengan tujuan bisnis. Ini mencakup identifikasi masalah utama dan pemanfaatan AI untuk membangun solusi yang efektif dan dapat diskalakan, dengan misi utama: menciptakan sistem operasional yang cepat, akurat,dan <strong>hemat biaya</strong>
+                    </p>
+                   <a href="pdf/AI Strategy IDN.pdf" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                        Kunjungi Project saya
+                    </a>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="solution-card bg-gray-50 rounded-xl p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-project-diagram text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">AI Workflow Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Menghubungkan berbagai tools AI dan tools profesional untuk<strong> mempercepat proses kerja,</strong> menghindari tugas-tugas yang bersifat repetitif, dan memungkinkan semua dilakukan tanpa menambah beban biaya operasional.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                        <img src="image/Project 1.png" alt="Workflow example" class="rounded-lg">
+                         <p class="text-sm font-medium">Project database Costomer</p>
+                        </div>
+                        <div class="text-center">
+                        <img src="image/Screenshot 2025-06-22 135125.png" alt="Workflow example" class="rounded-lg">
+                         <p class="text-sm font-medium">Automatisasi pembuatan ide content</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="solution-card bg-gray-50 rounded-xl p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-terminal text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Prompt Engineering</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Menguji tingkat kecanggihan LLM dan mengembangkan prompt yang ditujukan untuk memaksimalkan harapan kita, agar <strong>mesin dapat memberikan output yang sesuai</strong> bahkan melampaui ekspektasi semua ini bertujuan untuk mendukung berbagai pekerjaan.
+                    </p>
+                    <a href="https://www.notion.so/Welcome-to-AI-Wanity-1f6a3b10c097806784fef76bbb170cca?pvs=4" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                        Lihat apa yang saya buat
+                    </a>
+                </div>
+                
+                <!-- Solution 4 -->
+                <div class="solution-card bg-gray-50 rounded-xl p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Public Speaking</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                       Keterampilan yang saya miliki adalah kemampuan menjelaskan suatu hal di depan banyak orang atau klien, dengan penyampaian yang membantu audiens memahami topik secara jelas.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                        <img src="image/traning PS.jpeg" alt="Workshop" class="rounded-lg">
+                        <p class="text-sm font-medium">Public Speaking Traning</p>
+                        </div>
+                        <div class="text-center">
+                        <img src="image/webinar april.jpeg" alt="Speaking" class="rounded-lg">
+                        <p class="text-sm font-medium">Pemateri Webinar AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section --> 
+<section id="contact" class="py-20 bg-gray-50 fade-in">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">Let's Connect</h2>
+
+    
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Personal Contacts -->
+      <div class="contact-card bg-white rounded-2xl p-8 shadow-lg flex-1">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="User" class="w-6 h-6 mr-3">
+          Personal
+        </h3>
+        <div class="space-y-4">
+          <!-- Email -->
+          <a href="mailto:aiwavice@gmail.com" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" class="w-6 h-6">
+            </div>
+            <div><p class="font-medium text-gray-900">Email</p></div>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/harvixnexel?igsh=MTZ4Z3BhMXpreWplOQ==" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+            </div>
+            <div><p class="font-medium text-gray-900">Instagram</p></div>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/harvix-nexel-b1521a365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+            </div>
+            <div><p class="font-medium text-gray-900">LinkedIn</p></div>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6285254082750?text=Hello%20Nexel" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+            </div>
+            <div><p class="font-medium text-gray-900">WhatsApp</p></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Education & Content Contacts -->
+      <div class="contact-card bg-white rounded-2xl p-8 shadow-lg flex-1">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Education" class="w-6 h-6 mr-3">
+          Education & Content
+        </h3>
+        <div class="space-y-4">
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@ai.wave07?_t=ZS-8xK8OE2aI24&_r=1" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="image/62012ee14babde0004ca4177.png" alt="TikTok" class="w-6 h-6">
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Educational Posts</p>
+            </div>
+          </a>
+          <!-- Notion -->
+          <a href="https://www.notion.so/Welcome-to-AI-Wanity-1f6a3b10c097806784fef76bbb170cca?pvs=4" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion" class="w-6 h-6">
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Project Community</p>
+            </div>
+          </a>
+          <!-- Discord -->
+          <a href="https://discord.gg/2D3nCyjr" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="image/discord.png" alt="Discord" class="w-6 h-6">
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Community</p>
+            </div>
+          </a>
+          <!-- Instagram (again) -->
+          <a href="https://www.instagram.com/ai.waveid?igsh=MXUyZWpoZmp4Z3ZlaQ==" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Educational Posts</p>
+            </div>
+          </a>
+          <!-- X -->
+          <a href="https://x.com/Wave_Ai07?t=RsMDG--jocOxHzvdlsXbCQ&s=09" class="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <img src="image/x.png" alt="X" class="w-6 h-6">
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Daily Threads</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between mb-10">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white mb-4 inline-block">HN</a>
+                    <div class="flex space-x-6 mb-6">
+                        <a href="https://wa.me/6285254082750?text=Hello%20Nexel" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="mailto:aiwavice@gmail.com" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harvix-nexel-b1521a365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-5">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-white hover:text-blue-200 transition-colors duration-300">Home</a></li>
+                        <li><a href="#skills-project" class="text-white hover:text-blue-200 transition-colors duration-300">Skills & Project</a></li>
+                        <li><a href="#contact" class="text-white hover:text-blue-200 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Community</h3>
+                    <div class="flex space-x-6 items-center">
+                        <a href="https://discord.gg/2D3nCyjr" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="https://www.notion.so/Welcome-to-AI-Wanity-1f6a3b10c097806784fef76bbb170cca?pvs=4" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion" class="h-6 w-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-800 pt-6 text-center">
+                <div class="text-center">
+                    © 2025 Harvix Nexel. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Fade-in animation for sections as they come into view
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(element => {
+            element.style.opacity = 0;
+            fadeInObserver.observe(element);
+        });
+    </script>
+</body>
+</html>
